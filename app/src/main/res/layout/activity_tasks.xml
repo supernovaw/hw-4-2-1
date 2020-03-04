@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".TasksActivity">
+
+    <RadioButton
+        android:id="@+id/startRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:checked="true"
+        android:text="@string/task_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/finishRadioButton"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:text="@string/task_finish"
+        app:layout_constraintStart_toStartOf="@+id/startRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/startRadioButton" />
+
+    <TextView
+        android:id="@+id/startTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/startRadioButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/startRadioButton" />
+
+    <TextView
+        android:id="@+id/finishTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/finishRadioButton"
+        app:layout_constraintStart_toStartOf="@+id/startTextView"
+        app:layout_constraintTop_toTopOf="@+id/finishRadioButton" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmButton" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/confirm"
+        app:layout_constraintStart_toStartOf="@+id/finishRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/finishRadioButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

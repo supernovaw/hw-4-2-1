@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Homework 2.2.2</string>
+
+    <string name="notes">Notes</string>
+    <string name="tasks">Tasks</string>
+    <string name="address">Address picker</string>
+
+    <string name="notes_description">Edit multiline text that can be saved to use it after the app is closed</string>
+    <string name="tasks_description">Pick 2 dates as a period for completing a task</string>
+    <string name="address_description">Choose country and city</string>
+
+    <string name="type_note">Your note text</string>
+    <string name="clear_button">Clear</string>
+    <string name="save_button">Save</string>
+    <string name="saved_toast">Saved your note</string>
+
+    <string name="task_start">Start date</string>
+    <string name="task_finish">Finish date</string>
+    <string name="switch_dates">Switch places</string>
+    <string name="confirm">Confirm</string>
+    <string name="wrong_order">You have picked a day for start after the day of finish, please correct it</string>
+    <string name="chosen_dates_format">Starts at %s\nFinishes at %s</string>
+
+    <string name="confirm_toast">Country: %s\nCity: %s\nBuilding %d</string>
+    <string name="country_RU">Russia</string>
+    <string name="country_UA">Ukraine</string>
+    <string name="country_BY">Belarus</string>
+    <string-array name="countries">
+        <item>@string/country_RU</item>
+        <item>@string/country_UA</item>
+        <item>@string/country_BY</item>
+    </string-array>
+    <string-array name="cities_RU">
+        <item>Moscow</item>
+        <item>Saint-Petersburg</item>
+        <item>Kazan</item>
+    </string-array>
+    <string-array name="cities_UA">// glory
+        <item>Kyiv</item>
+        <item>Odessa</item>
+        <item>Kharkiv</item>
+        <item>Simferopol</item>
+    </string-array>
+    <string-array name="cities_BY">
+        <item>Minsk</item>
+        <item>Gomel</item>
+        <item>Grodno</item>
+    </string-array>
+</resources>
